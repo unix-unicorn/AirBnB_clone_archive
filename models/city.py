@@ -5,7 +5,7 @@ class City(BaseModel):
     """
 
 
-    def __init__(self):
+    def __init__(self, State.id, name):
         """ init function """
         self.State.id = ""
         self.name = ""
