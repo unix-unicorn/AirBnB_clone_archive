@@ -5,7 +5,7 @@ class user(BaseModel):
     """
 
 
-    def __init__():
+    def __init__(self):
         """my initionalize function """
         self.email = ""
         self.password = ""
