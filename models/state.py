@@ -5,6 +5,6 @@ class State(BaseModel):
     """
 
 
-    def __init__(self):
+    def __init__(self, name):
         """my init function"""
         self.name = ""
