@@ -1,10 +1,12 @@
 #!/usr/bin/python3
+from models.base_model import BaseModel
 class State(BaseModel):
     """
     my state class
     """
+    name = ""
 
 
-    def __init__(self, name):
+    def __init__(self, *args, **kwargs):
         """my init function"""
-        self.name = ""
+        super().__init__(*args, **kwargs)
