@@ -3,9 +3,9 @@ class City(BaseModel):
     """
     my class City
     """
+    State.id = ""
+    name = ""
 
-
-    def __init__(self, State.id, name):
-        """ init function """
-        self.State.id = ""
-        self.name = ""
+    def __init__(self,*args, **kwargs):
+        """ my init function """
+        super().__init__(*args, **kwargs)

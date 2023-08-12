@@ -3,6 +3,7 @@ class Amenity(BaseModel):
     """
     my BaseModel class
     """
-    def __init__(self, name):
-        """my self function"""
-        self.name = ""
+    name = ""
+    def __init__(self,*args, **kwargs):
+        """ my init function """
+        super().__init__(*args, **kwargs)

@@ -3,8 +3,10 @@ class Review(BaseModel):
     """
     my Review class
     """
-    def __init__(self, Place.id, User.id, text):
+    Place.id = ""
+    User.id = ""
+    text = ""
+
+    def __init__(self, *args, **kwargs):
         """my self function"""
-        self.Place.id = ""
-        self.User.id = ""
-        self.text = ""
+        super().__init__(*args, **kwargs)
