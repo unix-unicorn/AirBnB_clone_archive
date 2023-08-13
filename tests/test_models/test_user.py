@@ -6,6 +6,8 @@ from models.user import User
 from models.base_model import BaseModel
 from models import storage
 from datetime import datetime
+
+
 class TestAmna(unittest.TestCase):
     """
     test class for the max_integer() function.
@@ -14,12 +16,14 @@ class TestAmna(unittest.TestCase):
     password = "A12345"
     first_name = "Amna"
     last_name = "Taha"
+
     def Test_the_same(self):
         A = User()
         self.assertEquall(A.email, "")
         self.assertEquall(A.password, "")
         self.assertEquall(A.first_name, "")
         self.assertEquall(A.last_name, "")
+
     def Test_without_args(self):
         """my function test without args"""
         self.assertInstance(self.user, User)
@@ -35,6 +39,7 @@ class TestAmna(unittest.TestCase):
         self.assertEqual(self.user.password, "A12345")
         self.assertEqual(self.user.first_name, "Amna")
         self.assertEqual(self.user.last_name, "Taha")
+
     def Test_with_args(self):
         "my args test function"""
         f_all = {
@@ -46,7 +51,7 @@ class TestAmna(unittest.TestCase):
             "created_at": "2023-08-11T23:00:25.886465",
             "updated_at": "2023-08-11T23:00:25.886466"
         }
-        A_user= User(**f_all)
+        A_user = User(**f_all)
         self.assertInstance(A_user, User)
         self.assertInstance(A_user, BaseModel)
         self.assertInstance(A_user.id, str)
@@ -61,6 +66,7 @@ class TestAmna(unittest.TestCase):
         self.assertEqual(A_user.password, "ana123")
         self.assertEqual(A_user.first_name, "rayan")
         self.assertEqual(A_user.last_name, "ayman")
+
     def test_to_dict(self):
         """
             test to_dict class method
