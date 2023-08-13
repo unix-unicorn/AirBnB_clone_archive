@@ -13,7 +13,8 @@ class TestConstructor(unittest.TestCase):
     """
     state = State()
     state.name = "Cairo"
-   def test_create_instance_without_kwargs(self):
+
+    def test_create_instance_without_kwargs(self):
         """
         create an instance of class without kwargs
         """
