@@ -7,8 +7,8 @@ class Place(BaseModel):
     """
     my Place class
     """
-    City_id = ""
-    User_id = ""
+    city_id = ""
+    user_id = ""
     name = ""
     description = ""
     number_rooms = 0
@@ -17,7 +17,7 @@ class Place(BaseModel):
     latitude = 0.0
     price_by_night = 0
     longitude = 0.0
-    Amenity_id = ""
+    amenity_id = ""
 
     def __init__(self, *args, **kwargs):
         """ my init function """

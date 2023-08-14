@@ -6,8 +6,8 @@ class Review(BaseModel):
     """
     my Review class
     """
-    Place_id = ""
-    User_id = ""
+    place_id = ""
+    user_id = ""
     text = ""
 
     def __init__(self, *args, **kwargs):
