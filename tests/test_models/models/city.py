@@ -6,7 +6,7 @@ class City(BaseModel):
     """
     my class City
     """
-    State_id = ""
+    state_id = ""
     name = ""
 
     def __init__(self, *args, **kwargs):

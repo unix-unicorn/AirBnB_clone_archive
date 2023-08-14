@@ -42,8 +42,3 @@ class FileStorage:
                     self.new(new_list[value['__class__']](**value))
         except FileNotFoundError:
             pass
-        #if os.path.exists(self.__file_path):
-         #   with open(self.__file_path, 'r') as file:
-          #      dict_obj = json.load(file)
-           # for key, value in dict_obj.items():
-            #    self.__objects[key] = BaseModel(**value)
