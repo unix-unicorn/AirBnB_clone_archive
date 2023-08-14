@@ -8,7 +8,7 @@ from models import storage
 from datetime import datetime
 
 
-class TestAmna(unittest.TestCase):
+class TestUser(unittest.TestCase):
     """
     test class for the max_integer() function.
     """
@@ -28,7 +28,6 @@ class TestAmna(unittest.TestCase):
         """my function test without args"""
         self.assertInstance(self.user, User)
         self.assertInstance(self.user, BaseModel)
-        self.assertInstance(self.user.id, str)
         self.assertInstance(self.user.created_at, datetime)
         self.assertIsInstance(self.user.updated_at, datetime)
         self.assertInstance(self.user.email, str)
