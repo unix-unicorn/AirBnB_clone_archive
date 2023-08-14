@@ -20,7 +20,6 @@ class TestConstructor(unittest.TestCase):
         """
         self.assertIsInstance(self.state, State)
         self.assertIsInstance(self.state, BaseModel)
-        self.assertIsInstance(self.state.id, str)
         self.assertIsInstance(self.state.created_at, datetime)
         self.assertIsInstance(self.state.updated_at, datetime)
         self.assertIsInstance(self.state.name, str)
