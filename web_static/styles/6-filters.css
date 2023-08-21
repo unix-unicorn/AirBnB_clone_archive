@@ -1,0 +1,79 @@
+.filters{
+    height: 70px;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+}
+
+button{
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+    border: none;
+}
+
+button:hover{
+    opacity: 90%;
+}
+
+.locations, .amenities {
+    height: 100%;
+    width: 25%;
+    display: inline-block;
+    line-height: 100%;
+}
+
+.locations{
+    border-right: 1px solid #DDDDDD; 
+    position: relative;
+}
+
+.amenities{
+    position: absolute;
+}
+
+.popover {
+    visibility: hidden;
+    background-color: #FAFAFA;
+    width: 100%;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+li {
+    padding-left: 10px;
+}
+
+.locations:hover .popover, .amenities:hover .popover{
+    visibility: visible;
+}
+
+h2{
+    font-size: 16px;
+}
+
+h3{
+    font-weight: 600;
+}
+
+h4{
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
